@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 main">
+            <a class="contact-us"><u>Contact Us </u></a>
+            <div class="circleBase col-xs-offset-3 col-xs-offset-4 col-md-offset-5"></div>
+            <h6 class="centered bold">MEDCOMPANY</h6>
+            <p class="centered text">Medcompany Efficacy Study</p>
+            <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 form-container height130">
+                <h4 class="centered bold inside-heading">Search for a physician or organization</h4>
+                <div class="col-xs-12 col-sm-12 col-md-12 mtop10 pbottom25">
+                    <input type="text"
+                           name="city"
+                           class="form-control"
+                           ng-model="searchString"
+                           placeholder="Search for a doctor, physician or oraganization by name" required/>
+                    <div class="col-xs-12 col-sm-12 col-md-12 provider " ng-hide="!searchString"
+                         ng-repeat="provider in filtered = (providers | filter: searchString)">
+                        <div class="col-xs-1 col-sm-1 col-md-1 row-radio">
+                            <input type="radio" name="one" value="provider.first_name"
+                                   ng-click="sendProvider(provider)">
+                        </div>
+                        <p class="bold mtop5"> {{provider.first_name || provider.organization_name}}
+                            {{provider.last_name}}</p>
+                        <p class="locations"> We found {{filtered.length}} {{provider.first_name ||
+                            provider.organization_name}} {{provider.last_name}} nearby</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

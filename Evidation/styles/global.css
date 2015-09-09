@@ -1,0 +1,141 @@
+
+body {
+    background-color: #FAFDFF;
+}
+
+html {
+    background: #fff;
+}
+
+.row {
+    border: 0px solid green;
+}
+
+
+
+.centered-form{
+    margin-top: 20px;
+}
+
+
+.main {
+    background-color: #F7F7F7;
+    border: 1px solid #efefef;
+    box-shadow: 1px 3px 5px #888888;
+    margin-bottom: 70px;
+}
+.centered {
+    text-align: center;
+}
+.bold{
+    font-weight: bold;
+}
+.fosize12 {
+    font-size: 12px;
+}
+.circleBase {
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    border-radius: 50%;
+    background: #ffffff none repeat scroll 0% 0%;
+    border: 1px solid #00ACCA;
+    width: 15px;
+    height: 15px;
+}
+.pofixed{
+   position: fixed;
+}
+.left45per{
+    left: 45%;
+}
+.mtop5 {
+    margin-top: 5px !important;
+}
+.mtop10 {
+    margin-top: 10px !important;
+}
+.mtop25 {
+    margin-top: 25px;
+}
+.mbottom30 {
+    margin-bottom: 30px;
+}
+.mright40 {
+    margin-right: 40px;
+}
+.mleft15{
+    margin-left: 15px;
+}
+
+.pbottom25 {
+    padding-bottom: 25px;
+}
+.text {
+    font-family: arial;
+}
+.form-container{
+    margin-bottom: 70px;
+    background-color: #fff;
+    margin-top: 50px;
+    border: 2px solid #efefef;
+}
+.inside-heading {
+    font-weight: normal;
+    font-family: arial;
+    margin-top: 25px;
+}
+.contact-us {
+    position: absolute;
+    bottom : 30px;
+    color: gray;
+    text-decoration: none;
+}
+.provider {
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+}
+.locations {
+    color: gray;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.row-radio {
+    margin-top: 4px;
+    margin-left: -20px;
+}
+.shadow {
+    font-weight: bold;
+    font-size: 9px;
+}
+.text {
+    font-size: 10px;
+    font-weight: bold !important;
+}
+ input[type=checkbox] {
+    display:none;
+}
+input[type=checkbox] + label:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    vertical-align:middle;
+    margin-right: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid grey;
+}
+input[type=checkbox]:checked + label:before {
+    color:white;
+    background-color: #00ACCA;
+    text-align:center;
+    line-height:15px;
+    text-shadow:0px 0px 3px #eee;
+}
+
+.enrollButton, .confirmButton {
+    white-space: normal;
+}

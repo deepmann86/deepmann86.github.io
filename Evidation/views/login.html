@@ -1,0 +1,74 @@
+<div class="container">
+    <div class="row centered-form">
+        <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 main">
+
+            <a class="contact-us"><u>Contact Us </u></a>
+
+            <div class="circleBase col-xs-offset-3 col-sm-offset-4 col-md-offset-5"></div>
+            <h6 class="centered bold">MEDCOMPANY</h6>
+
+            <p class="centered text">Medcompany Efficacy Study</p>
+
+            <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-2 form-container">
+                <h4 class="centered bold inside-heading">Voluntary Participation</h4>
+
+                <p class="text">Participation in the study is voluntary. If you do not wish to participate, there will
+                    be no
+                    penalty of any kind.</p>
+
+                <p class="text">To confirm your intent to enroll in the study, please complete he form below.</p>
+                <!--firstname-->
+                <form class="form-inline" name="userForm" ng-submit="submitForm(userForm)">
+                    <div class="row">
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <label class="shadow">First Name</label>
+                            <input type="text"
+                                   name="firstname"
+                                   class="form-control"
+                                   ng-model="user.firstname"
+                                   placeholder="John" required/>
+
+                        </div>
+
+                        <!--lastname-->
+                        <div class="col-xs-6 col-sm-6 col-md-6">
+                            <label class="shadow">Last Name</label>
+                            <input type="text"
+                                   name="lastname"
+                                   class="form-control"
+                                   ng-model="user.lastname"
+                                   placeholder="Doe" required/>
+                        </div>
+                        <!--city-->
+                        <div class="col-xs-12 col-sm-12 col-md-12 mtop10">
+                            <label class="shadow">What city were you born in</label>
+                            <input type="text"
+                                   name="city"
+                                   class="form-control"
+                                   ng-model="user.city"
+                                   placeholder="City Name" required/>
+                        </div>
+                        <div class="checkbox col-xs-8 col-sm-8 col-md-8 mleft15 mtop10">
+                            <input type="checkbox" id="consent" ng-init="check=false" ng-true-value=true
+                                   ng-false-value="false" ng-model="check">
+                            <label class="text" for="consent">I consent to participate in the study</label>
+                        </div>
+                        <div class=" col-xs-12 col-sm-12 col-md-12 col-md-offset-4" ng-show="check == false">
+                            <button type="submit" class="btn btn-default mbottom30 mtop10 enrollButton" ng-disabled=true>Complete
+                                the form to continue enrollment
+                            </button>
+                        </div>
+                        <div class=" col-xs-12 col-sm-12 col-md-12 col-md-offset-3" ng-show="check == true">
+                            <button type="submit" class="btn btn-default  mbottom30 mtop10 confirmButton">I understand and wish to
+                                continue with enrollment
+                            </button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
